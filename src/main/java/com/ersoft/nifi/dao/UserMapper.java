@@ -1,0 +1,19 @@
+package com.ersoft.nifi.dao;
+
+import com.ersoft.nifi.model.User;
+
+public interface UserMapper {
+    int deleteByPrimaryKey(Integer id);
+
+    int insert(User record);
+
+    int insertSelective(User record);
+
+    User selectByPrimaryKey(Integer id);
+
+    int updateByPrimaryKeySelective(User record);
+
+    int updateByPrimaryKey(User record);
+
+    User login_select(User u);
+}
